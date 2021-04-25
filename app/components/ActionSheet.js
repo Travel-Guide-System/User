@@ -22,7 +22,7 @@ const ActionSheet = (props) => {
     ]);
 
     const renderHeader = () => (
-        <View style={{width: width, height: 50, backgroundColor:'#000'}}>
+        <View style={{width: width, height: 50, backgroundColor:'#000c'}}>
             <View style={styles.grabber} />
         </View>
     )
@@ -30,12 +30,12 @@ const ActionSheet = (props) => {
     const GetHeader = () => {
         return (
             <View style={{position:'relative', height: 320}}>
-                <ImageBackground source={require('../images/bg2.jpg')} style={styles.image}>
+                <ImageBackground source={require('../images/bg3.jpg')} style={styles.image}>
                 <Text style={[styles.heading, styles.textView]}>{props.locationName}</Text>
                 <Text style={[styles.description, styles.textView]}>{props.locationDescription}</Text>
                 <NearMe />
                 <View style = {styles.recent}>
-                    <Text style={{width: 130, textAlign: 'center', alignSelf: 'center', fontSize: 16, borderBottomColor: "#045ef2", borderBottomWidth: 2}}>Recent Places</Text>
+                    <Text style={{width: 130, textAlign: 'center', alignSelf: 'center', fontSize: 16, borderBottomColor: "#595ef2", borderBottomWidth: 2, color:"#222"}}>Recent Places</Text>
                 </View>
                 </ImageBackground>
             </View>
@@ -44,7 +44,7 @@ const ActionSheet = (props) => {
 
     const renderContent = () => (
         <View style={styles.container}>
-            <ImageBackground source={require('../images/bg2.jpg')} style={styles.image}>
+            <ImageBackground source={require('../images/bg3.jpg')} style={styles.image}>
                 <View style = {{marginBottom: 90}}>
                     {((cards.length === 0)? <GetHeader />
                     :<FlatList
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         minHeight: height-50,
     },
     textView: {
-        color: "#eee",
+        color: "#111",
         paddingHorizontal: 20,
     },
     heading: {
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingVertical: 10,
         width: width,
-        backgroundColor: "#fff",
+        backgroundColor: "#8fcdff",
         marginBottom: 10,
         alignContent: 'center'
     }

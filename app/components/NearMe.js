@@ -10,9 +10,9 @@ const {width, height} = Dimensions.get("screen")
 const NearMe = (props) => {
     const [cards, dataState] = useState([
         {name: 'Restaurant', image: require('../images/restaurant2.jpg')},
-        {name: 'Tourist Attractions', image: require('../images/touristAttractions2.jpg')},
+        {name: 'Parks', image: require('../images/park.jpg')},
         {name: 'PVRs', image: require('../images/theater.jpg')},
-        {name: 'Parks', image: require('../images/park.jpg')}
+        {name: 'Tourist Attractions', image: require('../images/touristAttractions2.jpg')}
     ]);
 
     return (
