@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Text, View, StatusBar, StyleSheet} from "react-native";
+import GuideList from '../components/GuideList';
+
+const Screen = () => {
+    return(
+        <View style = {styles.journeyContainer}>
+            <StatusBar barStyle="light-content" />
+            <Text style={{fontSize: 20, padding: 15}}>Book a Guide</Text>
+            <GuideList />
+        </View>
+    );
+};
 
 const styles = StyleSheet.create({
     journeyContainer: {
         backgroundColor: "#f0f0f0",
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
+        shadowOffset: {
+            width: 20,
+            height: -20
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 3
+    }, container: {
+        zIndex: 5,
+        width: '100%',
+    },
 });
 
-export default Screen = () => (
-    <View style = {styles.journeyContainer}>
-        <StatusBar barStyle="light-content" />
-        <Text>Plan My Journey</Text>
-    </View>
-)
+export default Screen;

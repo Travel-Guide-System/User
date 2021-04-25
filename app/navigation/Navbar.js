@@ -3,7 +3,6 @@ import {Text, View, StatusBar, StyleSheet} from "react-native";
 import 'react-native-gesture-handler';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-
 import {FontAwesome5} from "@expo/vector-icons";
 import Icon from "@expo/vector-icons/Ionicons";
 import {HomeScreen, JourneyScreen, FaqScreen, AccountScreen} from '../screens';

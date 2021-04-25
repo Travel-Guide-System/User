@@ -20,7 +20,7 @@ export default class App extends Component {
    var that = this;  
    setTimeout(function(){  
      that.Hide_Splash_Screen();  
-   }, 5000);  
+   }, 1000);  
   }  
 
   render() {

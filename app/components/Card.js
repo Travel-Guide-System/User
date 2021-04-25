@@ -9,7 +9,7 @@ const Card = (props) => {
                 <Image 
                     source={props.image} 
                     style={{height: null, width: null, resizeMode:'cover', flex:1, borderRadius: 10,
-                    borderWidth: 1, borderColor: "#fff"}}
+                    borderWidth: 1, borderColor: "#000"}}
                 />
             </View>
             <View style={{flex: 1, justifyContent:'center', alignItems: 'center',}}>

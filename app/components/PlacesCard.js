@@ -28,7 +28,7 @@ const PlaceCard = (props) => {
                 <Text style={styles.cardName}>{props.name}</Text>
                 <Text style={styles.description}>{props.description}</Text>
                 <View style={{flexDirection: 'row', width:cardW-20, position:'absolute', bottom: 15}}>
-                    <Rating showRating={false} startingValue={props.rating} count={5} imageSize={20} style={{flex: 1}}/>
+                    <Rating readonly showRating={false} startingValue={props.rating} count={5} imageSize={20} style={{flex: 1}}/>
                     <Text style={{flex: 2, textAlign:'center'}}>{props.time}</Text>
                 </View>
             </View>

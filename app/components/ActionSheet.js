@@ -29,13 +29,13 @@ const ActionSheet = (props) => {
 
     const GetHeader = () => {
         return (
-            <View style={{position:'relative', height: 320}}>
+            <View style={{position:'relative', height: 315}}>
                 <ImageBackground source={require('../images/bg3.jpg')} style={styles.image}>
                 <Text style={[styles.heading, styles.textView]}>{props.locationName}</Text>
                 <Text style={[styles.description, styles.textView]}>{props.locationDescription}</Text>
                 <NearMe />
                 <View style = {styles.recent}>
-                    <Text style={{width: 130, textAlign: 'center', alignSelf: 'center', fontSize: 16, borderBottomColor: "#595ef2", borderBottomWidth: 2, color:"#222"}}>Recent Places</Text>
+                    <Text style={{width: 130, textAlign: 'center', alignSelf: 'center', fontSize: 16, borderBottomColor: "#595ef2", color:"#fff"}}>Recent Places</Text>
                 </View>
                 </ImageBackground>
             </View>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingVertical: 10,
         width: width,
-        backgroundColor: "#8fcdff",
+        backgroundColor: "#FF7F50dd",
         marginBottom: 10,
         alignContent: 'center'
     }
